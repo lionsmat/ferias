@@ -31,7 +31,8 @@ const criar = () => {
 
 const listar = () => {
   atividades.forEach((atividade, indice) => {
-    console.log(`${indice + 1}. ${atividade}`);
+    console.log(`${indice + 1}. ${atividade.dia}: `);
+    atividade.descricao.forEach(descricao => console.log(`- ${descricao}`));
   });
 };
 
